@@ -3,9 +3,9 @@ import { ethers } from "ethers";
 import { NavLink } from 'react-router-dom';
 import Modal from 'react-modal';
 import ConnectWallet from "@/components/ConnectWallet";
-import WaitingForTransactionMessage from "@/components/WaitingForTransactionMessage";
-import TransactionErrorMessage from "@/components/TransactionErrorMessage";
-import type { NewNFT, NewNFTMarket } from "@/typechain";
+import WaitingForTransactionMessage from "../components/WaitingForTransactionMessage";
+import TransactionErrorMessage from "../components/TransactionErrorMessage";
+import type { NewNFT, NewNFTMarket } from "../typechain/index";
 import type { BrowserProvider } from "ethers";
 
 

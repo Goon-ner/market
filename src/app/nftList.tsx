@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
 type nftListProps = {
     nftList:nftType[];
     _handleBuyNFT: (id:string,price:string) => void;
-    _tokenUri: (tokenId: number) => Promise<string>
 }
 type nftType = {tokenId:string, tokenUrl:string, tokenPrice:string}
 
-const NftList: React.FunctionComponent<nftListProps> | any = ({nftList, _handleBuyNFT, _tokenUri}: nftListProps) => {
-    const [isLoading, setIsLoading] = useState<boolean>(true)
-        
+const NftList: React.FunctionComponent<nftListProps> | any = ({nftList, _handleBuyNFT}: nftListProps) => {        
     return (
         <div className="nftList">
         {nftList?.map((nft: nftType) => 

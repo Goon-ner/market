@@ -2,8 +2,8 @@
 import React, { useState, useEffect, FormEvent } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ethers } from "ethers";
-import { NewNFT__factory, NewNFTMarket__factory } from "@/typechain";
-import type { NewNFT, NewNFTMarket } from "@/typechain";
+import { NewNFT__factory, NewNFTMarket__factory } from "../typechain/index";
+import type { NewNFT, NewNFTMarket } from "../typechain/index";
 import type { BrowserProvider } from "ethers";
 import NftList from "./nftList"
 import "./styles.css"
@@ -302,7 +302,6 @@ export default function Home() {
           element={<NftList nftList={nftList} 
           _handleBuyNFT={_handleBuyNFT} 
           filterNftList={filterNftList} 
-          _tokenUri={_tokenUri} 
           />}/>
           <Route path='/account' element={<MyAccount 
           currentConnection={currentConnection}

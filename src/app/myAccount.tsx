@@ -1,7 +1,7 @@
 import React, { useState, FormEvent } from "react";
 import { ethers } from "ethers";
 import Modal from 'react-modal';
-import type { NewNFT, NewNFTMarket } from "@/typechain";
+import type { NewNFT, NewNFTMarket } from "../typechain/index";
 import type { BrowserProvider } from "ethers";
 
 
